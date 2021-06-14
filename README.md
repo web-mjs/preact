@@ -3,13 +3,10 @@
 <h3 align="center">use preact, hooks, custom-elements with just <code>import '@web-mjs/preact'</code></h3>
 
 ```js
-import { render, html, useState, useEffect } from 'https://unpkg.com/@web-mjs/preact';
+import { html, useState } from 'https://unpkg.com/@web-mjs/preact';
 
 const App = () => {
    const [clicks, setClicks] = useState(0);
-   useEffect(() => {
-     document.title = "Clicks: " + clicks;
-   });
 
    return html`<button onClick=${() => setClicks((x) => x + 1)}>Click</button>`;
 };
@@ -23,4 +20,4 @@ The module bundles <a href="https://github.com/preactjs/preact/blob/master/src/i
 * **hooks:** `useReducer`, `useState`, `useEffect`, `useLayoutEffect`, `useRef`, `useCallback`, `useContext`, `useDebugValue`, `useErrorBoundary`
 * **react-custom-element:** `registerCustomElement`
 
-**🚧 preact-mjs is not affiliated with the preact team.** To build, use rollup or `npm run build`
+**🚧 web-mjs is not affiliated with the Preact team.** To build on your own, use rollup or `npm run build`
