@@ -1,12 +1,16 @@
 <h3 align="center"><img src="https://raw.githubusercontent.com/preactjs/preact/8b0bcc927995c188eca83cba30fbc83491cc0b2f/logo.svg" height="50" valign="middle"> ES Module (.mjs) for Web</h3>
 <hr>
-<h3 align="center">use preact, hooks, custom-elements with just <code>import '@web-mjs/preact'</code></h3>
+<h3 align="center">use preact, hooks, custom-elements with<br>
+just <code>import 'https://unpkg.com/@web-mjs/preact'</code></h3>
 
 ```js
-import { html, useState } from 'https://unpkg.com/@web-mjs/preact';
+import { render, html, useState, useEffect } from 'https://unpkg.com/@web-mjs/preact';
 
 const App = () => {
    const [clicks, setClicks] = useState(0);
+   useEffect(() => {
+     document.title = "Clicks: " + clicks;
+   });
 
    return html`<button onClick=${() => setClicks((x) => x + 1)}>Click</button>`;
 };
