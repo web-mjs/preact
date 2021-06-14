@@ -1,9 +1,11 @@
 {
-  "name": "preact-mjs",
-  "version": "10.5.14",
+  "name": "@web-mjs/preact",
+  "version": "10.5.13",
   "description": "A .mjs bundle of preact, htm and preact hooks.",
   "main": "index.mjs",
-  "files": ["index.mjs"],
+  "files": [
+    "index.mjs"
+  ],
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.0.0",
     "rollup": "^2.51.2",
@@ -11,9 +13,9 @@
     "terser": "^5.7.0"
   },
   "dependencies": {
-    "htm": "^3.0.4",
     "preact": "^10.5.13",
-    "preact-custom-element": "^4.2.1"
+    "preact-custom-element": "^4.2.1",
+    "htm": "^3.0.4"
   },
   "scripts": {
     "build": "rollup -c",
@@ -21,8 +23,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/web-mjs/preact.git"
+    "url": "git+https://github.com/web-mjs/preact.git"
   },
   "author": "Filip Dimitrovski",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/web-mjs/preact/issues"
+  },
+  "homepage": "https://github.com/web-mjs/preact#readme"
 }
