@@ -19,7 +19,7 @@ The module bundles <a href="https://github.com/preactjs/preact/blob/master/src/i
 * `h`, `html`, `render`
 * `createElement`, `cloneElement`, `isValidElement`
 * `Fragment`, `Component`, `createContext`, `hydrate`, `options`
-* `useReducer`, `useState`, `useEffect`, `useLayoutEffect`, `useRef`, `useCallback`, `useContext`, `useDebugValue`, `useErrorBoundary`
-* `registerCustomElement`
+* **hooks:** `useReducer`, `useState`, `useEffect`, `useLayoutEffect`, `useRef`, `useCallback`, `useContext`, `useDebugValue`, `useErrorBoundary`
+* **react-custom-element:** `registerCustomElement`
 
 **preact.mjs is not affiliated with the preact team.**
