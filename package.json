@@ -1,7 +1,7 @@
 {
   "name": "preact-mjs",
-  "version": "10.5.13",
-  "description": "A module JS bundle of preact, htm and preact hooks.",
+  "version": "10.5.14",
+  "description": "A .mjs bundle of preact, htm and preact hooks.",
   "main": "index.mjs",
   "files": ["index.mjs"],
   "devDependencies": {

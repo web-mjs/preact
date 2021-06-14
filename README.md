@@ -1,6 +1,6 @@
 <h3 align="center"><img src="https://raw.githubusercontent.com/preactjs/preact/8b0bcc927995c188eca83cba30fbc83491cc0b2f/logo.svg" height="50" valign="middle"> ES Module (.mjs) for Web</h3>
 <hr>
-<h3 align="center">just <code>import preact.mjs</code> from <a href="https://unpkg.com/preact-mjs@latest">unpkg</a></h3>
+<h3 align="center">use preact, hooks, html with just <code>import 'preact-mjs'</code> from <a href="https://unpkg.com/preact-mjs@latest">unpkg</a></h3>
 
 ```js
 import { render, html, useState, useEffect } from 'https://unpkg.com/preact-mjs@latest';
@@ -22,4 +22,4 @@ The module bundles <a href="https://github.com/preactjs/preact/blob/master/src/i
 * **hooks:** `useReducer`, `useState`, `useEffect`, `useLayoutEffect`, `useRef`, `useCallback`, `useContext`, `useDebugValue`, `useErrorBoundary`
 * **react-custom-element:** `registerCustomElement`
 
-**preact.mjs is not affiliated with the preact team.**
+**🚧 preact-mjs is not affiliated with the preact team.** To build, use rollup or `npm run build`
