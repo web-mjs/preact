@@ -30,7 +30,7 @@ The `registerCustomElement` function from preact is exported as:
 ```js
 import { webComponents } from 'https://unpkg.com/@web-mjs/preact';
 
-webComponents.register(someComponent);
+webComponents.register(SomeComponent, 'x-some-tag');
 ```
 
 **🚧 web-mjs is not affiliated with the Preact team.** To build on your own, use rollup or `npm run build`
