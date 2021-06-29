@@ -22,6 +22,16 @@ The module bundles <a href="https://github.com/preactjs/preact/blob/master/src/i
 * `createElement`, `cloneElement`, `isValidElement`
 * `Fragment`, `Component`, `createContext`, `hydrate`, `options`
 * **hooks:** `useReducer`, `useState`, `useEffect`, `useLayoutEffect`, `useRef`, `useCallback`, `useContext`, `useDebugValue`, `useErrorBoundary`
-* **react-custom-element:** `registerCustomElement`
+
+**Web Components**
+
+The `registerCustomElement` function from preact is exported as:
+
+```js
+import { webComponents } from 'https://unpkg.com/@web-mjs/preact';
+
+webComponents.register(someComponent);
+```
 
 **🚧 web-mjs is not affiliated with the Preact team.** To build on your own, use rollup or `npm run build`
+

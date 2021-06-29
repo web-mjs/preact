@@ -1,6 +1,6 @@
 {
   "name": "@web-mjs/preact",
-  "version": "10.5.13",
+  "version": "20.5.13",
   "description": "A .mjs bundle of preact, htm and preact hooks.",
   "main": "index.mjs",
   "files": [
