@@ -19,15 +19,18 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm install
+    - run: rm package-lock.json && npm install
     - run: |
         SRC=$(cat <<EOF
         import json
         m = json.load(open('package.json'))
         x,y,z=m['version'].split('.')
-        m['version']=f'${x}.${y}.${int(z)+1}'
+        m['version']=f'{x}.{y}.{int(z)+1}'
         open('package.json', 'w').write(json.dumps(m))
         EOF
         )
         py -c "$SRC"
     - run: npm publish --access=public
+    - name: Add & Commit
+      uses: EndBug/add-and-commit@v7.3.0
+        
