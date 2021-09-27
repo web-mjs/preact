@@ -29,7 +29,7 @@ jobs:
         open('package.json', 'w').write(json.dumps(m))
         EOF
         )
-        py -c "$SRC"
+        python3 -c "$SRC"
     - run: npm publish --access=public
     - name: Add & Commit
       uses: EndBug/add-and-commit@v7.3.0
