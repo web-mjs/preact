@@ -21,7 +21,7 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: |
-        SRC=cat (<<EOF
+        SRC=(cat <<EOF
         import json
         m = json.load(open('package.json'))
         x,y,z=m['version'].split('.')
