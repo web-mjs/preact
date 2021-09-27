@@ -31,6 +31,8 @@ jobs:
         )
         python3 -c "$SRC"
     - run: npm publish --access=public
+      with:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     - name: Add & Commit
       uses: EndBug/add-and-commit@v7.3.0
         
