@@ -31,7 +31,7 @@ jobs:
         EOF
         )
         python3 -c "$SRC"
-    - run: npm publish --access=public
+    - run: npm run build && npm publish --access=public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     - name: Add & Commit
